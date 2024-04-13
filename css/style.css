@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "sofia pro", sans-serif;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+.img-container .my-face {
+  width: 200px;
+  margin-top: 15px;
+  margin-bottom: 50px;
+  border-radius: 3%;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
+  max-width: 400px;
+}
+
+header {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 10px;
+  border-bottom: 1px solid rgba(0, 17, 255, 0.808);
+  padding-bottom: 10px;
+  background-color: rgb(223, 223, 223);
+}
+header .dev {
+  color: rgba(0, 17, 255, 0.808);
+}
+
+.logo {
+  color: #081b29;
+  font-weight: 900;
+  font-size: 20px;
+}
+.logo span {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.features-menu {
+  display: none;
+  background-color: rgba(0, 17, 255, 0.808);
+  border-radius: 5px;
+  padding-top: 30px;
+  position: absolute;
+  z-index: 1;
+}
+.features-menu li {
+  border-bottom: 1px solid #f3f1f1;
+  padding: 20px;
+}
+.features-menu li a {
+  color: white;
+  font-weight: 800;
+}
+
+.dropdown {
+  position: relative;
+}
+.dropdown span {
+  z-index: 2;
+  position: relative;
+  cursor: pointer;
+}
+.dropdown:hover .features-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin-left: -130px;
+  margin-top: -30px;
+}
+.dropdown:hover .features-menu:hover .material-symbols-outlined {
+  background-color: #f3f1f1;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.home .homecontent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.home h6 {
+  font-size: 15px;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.8431372549);
+}
+
+h3 {
+  margin-top: 20px;
+  font-size: 25px;
+  color: rgba(0, 17, 255, 0.808);
+  font-weight: 900;
+}
+
+.divider {
+  display: flex;
+  justify-content: center;
+}
+.divider .line {
+  margin: 10px 50px;
+  background-color: #081b29;
+  width: 200px;
+  height: 2px;
+}
+
+.wrapper {
+  margin: 40px;
+}
+.wrapper .button .icon {
+  display: flex;
+  justify-content: center;
+}
+.wrapper .button .icon i {
+  color: #ffffff;
+  transform: scale(160%);
+  padding: 10px;
+  margin: 20px 30px;
+  border-radius: 50%;
+  box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.253);
+  border: 1px solid black;
+}
+.wrapper .button .icon .fa-facebook {
+  background-color: #1877F2;
+}
+.wrapper .button .icon .fa-instagram {
+  background-color: #E4405F;
+}
+.wrapper .button .icon .fa-github {
+  background-color: #131418;
+}
+
+.wrapper-img {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper-about-me {
+  margin: 100px 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.personality {
+  background-color: white;
+  max-width: 450px;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid black;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.692);
+}
+
+p {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #081b29;
+  padding-bottom: 40px;
+  line-height: 2em;
+}
+
+main {
+  width: 100%;
+  background-color: rgba(0, 17, 255, 0.808);
+  color: white;
+  font-weight: 900;
+}
+main h6 {
+  padding-top: 30px;
+  text-align: center;
+  font-weight: 800;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+main p {
+  margin: 0 30px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+}
+main .wrapper-skills .skills {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+main .wrapper-skills i {
+  margin: 5px;
+  padding: 20px;
+  background-color: white;
+  color: #000000;
+  border-radius: 15%;
+  border: 1px solid black;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.692);
+}/*# sourceMappingURL=style.css.map */
