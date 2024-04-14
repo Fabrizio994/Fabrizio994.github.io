@@ -27,7 +27,7 @@
       </li>
     </ul>
   </header>
-  <div class="img-container"><img class="my-face" src="img/photo_2020-12-10_21-42-582.jpg" alt=""></div>
+  <div class="img-container"><img class="my-face" src="img/Images.jpg" alt=""></div>
   <section class="home">
     <div class="homecontent">
       <h4>Ciao, mi chiamo</h4>
@@ -58,18 +58,38 @@
 
   <main id="Know-me">
     <h6>Ciao, Io sono Fabrizio</h6>
-    <p> Sono un front-end developer appassionato che abbraccia la sfida dell'apprendimento continuo.<br> Con una mente aperta e un'incessante curiosità, mi impegno a crescere professionalmente e personalmente, affrontando ogni giorno con determinazione e creatività.</p>
+    <div class="wrap-biografy">
+      <p> Sono un front-end developer appassionato che abbraccia la sfida dell'apprendimento continuo.<br> Con una mente aperta e un'incessante curiosità, mi impegno a crescere professionalmente e personalmente, affrontando ogni giorno con determinazione e creatività.</p>
+    </div>
     
     <div class="wrapper-skills">
     <div class="skills">
-      <i class="fa-brands fa-html5 fa-2xl"></i>
-      <i class="fa-brands fa-css3 fa-2xl"></i>
-      <i class="fa-brands fa-bootstrap fa-2xl"></i>
-      <i class="fa-brands fa-sass fa-2xl"></i>
+      <div class="d-h5">
+        <h5>Skills</h5>
+      </div>
+      <div class="w-skills">
+      <div class="skill"><i class="fa-brands fa-html5 fa-2xl"></i><span>Html</span></div>
+      <div class="skill"><i class="fa-brands fa-css3 fa-2xl"></i><span>Css</span></div>
+      <div class="skill"><i class="fa-brands fa-bootstrap fa-2xl"></i><span>Bootstrap</span></div>
+      <div class="skill"><i class="fa-brands fa-sass fa-2xl"></i><span>Sass</span></div>
     </div>
-  </div>
-  
-   
+    </div>
+    </div>
   </main>
+  <div class="forms" style="height:500px">
+    <div>
+    <label for="full-name">Name</label>
+    <input type="text" name="full-name" id="full-name" placeholder="Mario Rossi">
+  </div>
+  <div class="email">
+    <label for="email">Email</label>
+    <input type="text" name="email" type="email" placeholder="email@example.com">
+  </div>
+  <div class='form-row'>
+    <label for='abstract'>Abstract</label>
+    <textarea id='abstract' name='abstract'></textarea>
+    <div class='instructions'>Describe your talk in 500 words or less</div>
+  </div>
+  </div>
 </body>
 </html>

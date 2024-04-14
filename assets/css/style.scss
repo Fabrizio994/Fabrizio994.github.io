@@ -212,11 +212,12 @@ justify-content: center;
   }
 
 main{
-  position: relative;
+position: relative;
 width: 100%;
 background-color: $secondary-color;
 color: white;
 font-weight: 900;
+
 h6{
   padding-top: 30px;
   text-align: center;
@@ -224,36 +225,98 @@ h6{
   font-size: 22px;
   margin-bottom: 30px;
 }
+.wrap-biografy{
+  display: flex;
+  justify-content: center;
+}
 p{
+  max-width: 800px;
   margin: 0 30px;
-  margin-bottom: 180px;
+  margin-bottom: 50px;
   text-align: center;
   font-size: 20px;
   font-weight: 400;
   color: white;
-
 }
 
 .wrapper-skills{
   display: flex;
   justify-content: center;
- 
+
+  .d-h5{
+    display: flex;
+    justify-content: center;
+
+    h5{
+      color: $text-color;
+      font-size: 20px;
+      font-weight: 900;
+    }
+  }
+
+  .w-skills{
+    display: flex;
+  }
+
+  .skill{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin:10px;
+
+    span{
+      font-size: 16px;
+      font-weight: 300;
+    }
+  }
+
   .skills{ 
     position: absolute;
-    bottom: -50px;
+    bottom: -100px;
     border-radius: $border-radius;
     box-shadow: $box-shadow;
-    background-color: white;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
+    background-color: rgb(255, 255, 255);
+
+    span{
+      color: #000000;
+    }
 
   i{
+    box-shadow: $box-shadow;
+    border-radius: 10px;
+    background-color: white;
     padding: 20px;
-    margin: 5px;
-    color:black;
+    margin-bottom: 20px;
+  }
+
+  .fa-html5{
+    color: orangered;
+  }
+
+  .fa-css3{
+    color:rgb(38, 38, 253);
+  }
+
+  .fa-bootstrap{
+    color: rgb(255, 0, 200);
+  }
+
+  .fa-sass{
+    color: rosybrown;
   }
 }
-}}
+}
+}
+
+.forms{
+  margin: 50px 30px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction: column;
+
+  .form{
+    display: flex;
+    flex-direction: column;
+  }
+}
