@@ -73,19 +73,20 @@ main{
     max-width: 1200px;
   }
 }
-.contact-me-footer{
+.contact-me{
   text-align: center;
   font-weight: 700;
   
 .forms{
   margin-top: 100px;
-}
-.form-row-button{
-  button:hover{
-    cursor: pointer;
-    opacity: 0.98;
-    transform: scale(102%);
-
+  .form-row-button{
+    button{
+      cursor: pointer;
+    }
+    .submit:hover{
+      opacity: 0.98;
+      transform: scale(101%);
+    }
   }
 }
 }

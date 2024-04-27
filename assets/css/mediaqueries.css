@@ -45,15 +45,17 @@
   max-width: 1200px;
 }
 
-.contact-me-footer {
+.contact-me {
   text-align: center;
   font-weight: 700;
 }
-.contact-me-footer .forms {
+.contact-me .forms {
   margin-top: 100px;
 }
-.contact-me-footer .form-row-button button:hover {
+.contact-me .forms .form-row-button button {
   cursor: pointer;
+}
+.contact-me .forms .form-row-button .submit:hover {
   opacity: 0.98;
-  transform: scale(102%);
+  transform: scale(101%);
 }/*# sourceMappingURL=mediaqueries.css.map */
