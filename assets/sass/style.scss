@@ -203,7 +203,8 @@ img{
 main{
 position: relative;
 width: 100%;
-background-color: $secondary-color;
+background: rgb(0,17,249);
+background: linear-gradient(90deg, rgba(0,17,249,0.6502976190476191) 0%, rgba(0,51,249,1) 0%, rgba(17,133,198,1) 97%, rgba(38,138,255,1) 225%);
 color: white;
 font-weight: 900;
 

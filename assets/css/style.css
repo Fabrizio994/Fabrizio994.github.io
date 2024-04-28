@@ -138,7 +138,8 @@ header {
 main {
   position: relative;
   width: 100%;
-  background-color: rgba(0, 17, 255, 0.808);
+  background: #0011f9;
+  background: linear-gradient(90deg, rgba(0, 17, 249, 0.650297619) 0%, #0033f9 0%, #1185c6 97%, #268aff 225%);
   color: white;
   font-weight: 900; }
   main h6 {
