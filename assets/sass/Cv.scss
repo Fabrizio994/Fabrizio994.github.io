@@ -237,7 +237,8 @@ h1{
 footer{
   text-align: center;
   font-weight: 700;
-  margin-bottom: 20px;
+  padding: 20px;
+  background-color: white;
 }
 
 @media only screen and (min-width:1382px){
@@ -273,7 +274,10 @@ footer{
           margin-top: 0;
         }
       }
-      
     }
-  }
+  
+  } 
+  footer{
+    background-color: lightblue;
+   } 
 }
