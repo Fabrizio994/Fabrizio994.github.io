@@ -17,16 +17,30 @@
   </script>
   <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
   <title>Fabrizio Recchia Dev</title>
-  <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
 <script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "5-nttaLxt6Zvq0wQl",
-      });
-   })();
-</script>
+  emailjs.init('5-nttaLxt6Zvq0wQl')</script>
+  <script>const btn = document.getElementById('button');
+
+    document.getElementById('form')
+     .addEventListener('submit', function(event) {
+       event.preventDefault();
+    
+       btn.value = 'Sending...';
+    
+       const serviceID = 'default_service';
+       const templateID = 'template_mgle077';
+    
+       emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+          btn.value = 'Send Email';
+          alert('Sent!');
+        }, (err) => {
+          btn.value = 'Send Email';
+          alert(JSON.stringify(err));
+        });
+    });</script>
 </head>
 <body>
   <header>
@@ -117,22 +131,22 @@
     <div class="wrap-footer">
     <h3>Contact me</h3>
       <div class="forms">
-        <form action='#' method="post">
+        <form id="contact_form" action='' method="post">
           <div class="form-row">
-            <label for="full-name">Name</label>
-             <input type="text" name="full-name" required id="full-name " placeholder="Mario Rossi">
+            <label for="user_name">Name</label>
+             <input type="text" name="user_name" id="user_name"  id="from_name " placeholder="Mario Rossi" required>
           </div>
         <div class="form-row">
-      <label for="email">Email</label>
-    <input type="text" name="email" type="email" placeholder="email@example.com" required>
+      <label for="user_email">Email</label>
+    <input type="email" id="email_id" name="user_email" placeholder="email@example.com" required>
   </div>
   <div class='form form-row'>
     <label for='abstract'>Message</label>
-     <textarea id='abstract' name='abstract' required></textarea>
+     <textarea id='message' name='abstract' required></textarea>
        <div class='instructions'>Describe your talk in 500 words or less</div>
       </div>
-  <div class="form-row-button">
-    <button class="submit" type="submit">Submit</button>
+      <div class="form-row-button">
+    <button onclick="SendMail()" class="submit" id="button" input="submitBtn" type="submit" value="Send Email">Submit</button>
   </form>
   </div>
   </div>
