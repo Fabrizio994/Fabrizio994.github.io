@@ -8,6 +8,19 @@
   font-family: "sofia pro", sans-serif;
 }
 
+h1 {
+  font-weight: 800;
+  font-size: 30px;
+  color: rgba(8, 27, 41, 0.8745098039);
+}
+
+h3 {
+  margin-top: 20px;
+  font-size: 25px;
+  color: rgba(0, 17, 255, 0.808);
+  font-weight: 900;
+}
+
 header {
   margin-top: 50px;
   width: 100%;
@@ -20,22 +33,19 @@ header {
 header .dev {
   color: rgba(0, 17, 255, 0.808);
 }
-
-.logo {
+header .logo {
   color: rgba(8, 27, 41, 0.8745098039);
   font-weight: 900;
   font-size: 20px;
 }
-.logo .dev {
+header .logo .dev {
   font-size: 18px;
   font-weight: 900;
 }
-
-.material-symbols-outlined {
+header .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
-
-.features-menu {
+header .features-menu {
   display: none;
   background-color: rgba(0, 17, 255, 0.808);
   border-radius: 5px;
@@ -43,35 +53,34 @@ header .dev {
   position: absolute;
   z-index: 1;
 }
-.features-menu li {
+header .features-menu li {
   border-bottom: 1px solid #f3f1f1;
   padding: 20px;
 }
-.features-menu li a {
+header .features-menu li a {
   width: 100%;
   color: white;
   font-weight: 800;
   transition: 0.1s;
 }
-.features-menu li a:hover {
+header .features-menu li a:hover {
   border-radius: 5px;
   color: rgba(0, 17, 255, 0.808);
   background-color: white;
   opacity: 0.8;
 }
-.features-menu li:last-of-type {
+header .features-menu li:last-of-type {
   border-bottom: none;
 }
-
-.dropdown {
+header .dropdown {
   position: relative;
 }
-.dropdown span {
+header .dropdown span {
   z-index: 2;
   position: relative;
   cursor: pointer;
 }
-.dropdown:hover .features-menu {
+header .dropdown:hover .features-menu {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -80,7 +89,7 @@ header .dev {
   margin-left: -130px;
   margin-top: -30px;
 }
-.dropdown:hover .features-menu:hover .material-symbols-outlined {
+header .dropdown:hover .features-menu:hover .material-symbols-outlined {
   background-color: #f3f1f1;
   padding: 5px;
   border-radius: 3px;
@@ -113,40 +122,25 @@ header .dev {
 .home h6 {
   font-size: 15px;
 }
-
-h1 {
-  font-weight: 800;
-  font-size: 30px;
-  color: rgba(8, 27, 41, 0.8745098039);
-}
-
-h3 {
-  margin-top: 20px;
-  font-size: 25px;
-  color: rgba(0, 17, 255, 0.808);
-  font-weight: 900;
-}
-
-.divider {
+.home .divider {
   display: flex;
   justify-content: center;
 }
-.divider .line {
+.home .divider .line {
   margin: 10px 50px;
   background-color: rgba(8, 27, 41, 0.8745098039);
   width: 200px;
   height: 2px;
 }
-
-.wrapper {
+.home .wrapper {
   margin: 40px;
 }
-.wrapper .button .icon {
+.home .wrapper .button .icon {
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
 }
-.wrapper .button .icon i {
+.home .wrapper .button .icon i {
   color: #ffffff;
   transform: scale(160%);
   padding: 10px;
@@ -155,13 +149,13 @@ h3 {
   box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.253);
   border: 1px solid black;
 }
-.wrapper .button .icon .fa-facebook {
+.home .wrapper .button .icon .fa-facebook {
   background-color: #1877F2;
 }
-.wrapper .button .icon .fa-instagram {
+.home .wrapper .button .icon .fa-instagram {
   background-color: #E4405F;
 }
-.wrapper .button .icon .fa-github {
+.home .wrapper .button .icon .fa-github {
   background-color: #131418;
 }
 
@@ -171,34 +165,6 @@ h3 {
 }
 .wrapper-img img {
   width: 90%;
-}
-
-.wrapper-about-me {
-  margin: 100px 50px;
-  display: flex;
-  justify-content: center;
-}
-
-.personality {
-  background-color: white;
-  max-width: 450px;
-  text-align: left;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  border: 1px solid black;
-  margin-bottom: 50px;
-  border-radius: 5px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.692);
-}
-
-p {
-  margin-left: 10px;
-  font-size: 16px;
-  font-weight: 600;
-  color: rgba(8, 27, 41, 0.8745098039);
-  padding-bottom: 40px;
-  line-height: 2em;
 }
 
 main {
@@ -227,31 +193,12 @@ main p {
   font-size: 20px;
   font-weight: 400;
   color: white;
+  padding-bottom: 40px;
+  line-height: 2em;
 }
 main .wrapper-skills {
   display: flex;
   justify-content: center;
-}
-main .wrapper-skills .d-h5 {
-  display: flex;
-  justify-content: center;
-}
-main .wrapper-skills .d-h5 h5 {
-  margin-bottom: 30px;
-  margin-top: 20px;
-  color: rgba(0, 17, 255, 0.808);
-  font-size: 22px;
-  font-weight: 900;
-}
-main .wrapper-skills .skill {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin: 10px;
-}
-main .wrapper-skills .skill span {
-  font-size: 18px;
-  font-weight: 300;
 }
 main .wrapper-skills .skills {
   position: absolute;
@@ -261,17 +208,23 @@ main .wrapper-skills .skills {
   background-color: rgb(255, 255, 255);
   border: 1px solid black;
 }
+main .wrapper-skills .skills .d-h5 {
+  display: flex;
+  justify-content: center;
+}
+main .wrapper-skills .skills .d-h5 h5 {
+  margin-bottom: 30px;
+  margin-top: 20px;
+  color: rgba(0, 17, 255, 0.808);
+  font-size: 22px;
+  font-weight: 900;
+}
 main .wrapper-skills .skills .w-skills {
   flex-wrap: wrap;
   display: flex;
   justify-content: space-around;
 }
-main .wrapper-skills .skills span {
-  font-weight: 700;
-  color: rgba(8, 27, 41, 0.8745098039);
-  margin-bottom: 50px;
-}
-main .wrapper-skills .skills i {
+main .wrapper-skills .skills .w-skills i {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.692);
   border-radius: 10px;
   border: 1px solid black;
@@ -279,17 +232,29 @@ main .wrapper-skills .skills i {
   padding: 20px;
   margin-bottom: 50px;
 }
-main .wrapper-skills .skills .fa-html5 {
+main .wrapper-skills .skills .w-skills .fa-html5 {
   color: orangered;
 }
-main .wrapper-skills .skills .fa-css3 {
+main .wrapper-skills .skills .w-skills .fa-css3 {
   color: rgb(38, 38, 253);
 }
-main .wrapper-skills .skills .fa-bootstrap {
+main .wrapper-skills .skills .w-skills .fa-bootstrap {
   color: rgb(255, 0, 200);
 }
-main .wrapper-skills .skills .fa-sass {
+main .wrapper-skills .skills .w-skills .fa-sass {
   color: rosybrown;
+}
+main .wrapper-skills .skills .skill {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+}
+main .wrapper-skills .skills .skill span {
+  font-size: 18px;
+  font-weight: 700;
+  color: rgba(8, 27, 41, 0.8745098039);
+  margin-bottom: 50px;
 }
 
 .portfolio {

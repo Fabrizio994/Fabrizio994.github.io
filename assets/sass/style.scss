@@ -15,6 +15,18 @@ $margin-box: 0 60px;
   font-family: "sofia pro", sans-serif ;
 }
 
+h1{
+  font-weight: 800;
+  font-size: 30px;
+  color: $text-color;
+}
+
+h3{
+  margin-top: 20px;
+  font-size: 25px;
+  color: $secondary-color;
+  font-weight: 900;
+}
 header{
   margin-top: 50px;
   width: 100%;
@@ -26,7 +38,6 @@ header{
 
   .dev{
  color: $secondary-color;
-}
 }
 
 .logo{
@@ -103,7 +114,7 @@ header{
     border-radius: 3px;
   }
 }
-}
+}}
 
 .home{
   width: 100%;
@@ -111,7 +122,6 @@ header{
   justify-content: center;
   flex-direction: column;
 
-  
 .img-container{
   display: flex;
   justify-content: center; 
@@ -135,20 +145,6 @@ header{
   h6{
     font-size: 15px;
   }
-}
-
-h1{
-  font-weight: 800;
-  font-size: 30px;
-  color: $text-color;
-}
-
-h3{
-  margin-top: 20px;
-  font-size: 25px;
-  color: $secondary-color;
-  font-weight: 900;
-}
 
 .divider{
   display: flex;
@@ -161,7 +157,6 @@ h3{
   height: 2px;
 }
 }
-
 .wrapper{
  margin:40px;
   .button{
@@ -193,7 +188,7 @@ h3{
       }
     }
   }
-
+}
 
 
 .wrapper-img{
@@ -204,33 +199,6 @@ img{
   width: 90%;
 }
 }
-.wrapper-about-me{
-  margin: 100px 50px;
-  display: flex;
-  justify-content: center;
-}
-.personality{
-  background-color:white;
-  max-width: 450px;
-  text-align: left;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  border: $border;
-  margin-bottom: 50px;
-  border-radius: $border-radius;
-  box-shadow: $box-shadow;
-  }
-
- 
-  p{
-    margin-left: 10px;
-    font-size: 16px;
-    font-weight: 600;
-    color:$text-color;
-    padding-bottom: 40px;
-    line-height: 2em;
-  }
 
 main{
 position: relative;
@@ -246,10 +214,12 @@ h6{
   font-size: 22px;
   margin-bottom: 30px;
 }
+
 .wrap-biografy{
   display: flex;
   justify-content: center;
 }
+
 p{
   max-width: 800px;
   margin: 0 30px;
@@ -258,25 +228,66 @@ p{
   font-size: 20px;
   font-weight: 400;
   color: white;
+  padding-bottom: 40px;
+  line-height: 2em;
 }
 
 .wrapper-skills{
   display: flex;
   justify-content: center;
 
-  .d-h5{
-    display: flex;
-    justify-content: center;
+ .skills{ 
+    position: absolute;
+    bottom: -200px;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    background-color: rgb(255, 255, 255);
+    border: $border;
 
-    h5{
-      margin-bottom: 30px;
-      margin-top: 20px;
-      color: $secondary-color;
-      font-size: 22px;
-      font-weight: 900;
+    .d-h5{
+      display: flex;
+      justify-content: center;
+  
+      h5{
+        margin-bottom: 30px;
+        margin-top: 20px;
+        color: $secondary-color;
+        font-size: 22px;
+        font-weight: 900;
+      }
     }
-  }
+  
 
+    .w-skills{
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: space-around;
+      
+      i{
+        box-shadow: $box-shadow;
+        border-radius: 10px;
+        border: $border;
+        background-color: white;
+        padding: 20px;
+        margin-bottom:50px;
+      }
+    
+      .fa-html5{
+        color: orangered;
+      }
+    
+      .fa-css3{
+        color:rgb(38, 38, 253);
+      }
+    
+      .fa-bootstrap{
+        color: rgb(255, 0, 200);
+      }
+    
+      .fa-sass{
+        color: rosybrown;
+      }
+    }
 
   .skill{
     display: flex;
@@ -286,57 +297,13 @@ p{
 
     span{
       font-size: 18px;
-      font-weight: 300;
-    }
-  }
-
-  .skills{ 
-    position: absolute;
-    bottom: -200px;
-    border-radius: $border-radius;
-    box-shadow: $box-shadow;
-    background-color: rgb(255, 255, 255);
-    border: $border;
-
-
-    .w-skills{
-      flex-wrap: wrap;
-      display: flex;
-      justify-content: space-around;
-    }
-
-    span{
       font-weight: 700;
       color: $text-color;
       margin-bottom: 50px;
+        }
+      }
     }
-
-  i{
-    box-shadow: $box-shadow;
-    border-radius: 10px;
-    border: $border;
-    background-color: white;
-    padding: 20px;
-    margin-bottom:50px;
   }
-
-  .fa-html5{
-    color: orangered;
-  }
-
-  .fa-css3{
-    color:rgb(38, 38, 253);
-  }
-
-  .fa-bootstrap{
-    color: rgb(255, 0, 200);
-  }
-
-  .fa-sass{
-    color: rosybrown;
-  }
-}
-}
 }
 
 .portfolio{
@@ -444,9 +411,10 @@ p{
   color: white;
   background-color: $secondary-color;
   box-shadow: 1px 5px 10px 0px rgba(0, 0, 0, 0.61);
+    }
+  }
 }
-}
-   }
+
    footer{
     margin-top: 20px;
    }
