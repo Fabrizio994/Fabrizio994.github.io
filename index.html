@@ -5,18 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <meta property="og:title" content="Fabrizio Recchia">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://fabrizio994.github.io/Progetto-HTML-CSS-di-Fabrizio-Recchia/">
+  <meta property="og:url" content="https://fabrizio994.github.io/">
   <meta name="description" content="fabrizio recchia Front end developer">
   <meta property="og:image" content="assets/img/Images.jpg">
   <meta property="og:image:width" content="300">
   <meta property="og:image:height" content="500">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/mediaqueries.css">
+  <link rel="stylesheet" href="assets/css/home.css">
+  <link rel="stylesheet" href="assets/css/HomeMediaq.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <script src="https://kit.fontawesome.com/9f993745d0.js" crossorigin="anonymous">
   </script>
-  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
-  <title>Fabrizio Recchia Dev</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico"> 
+  <title>Fabrizio Recchia Dev</title> 
   <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
@@ -31,25 +34,24 @@
 <script src="assets/js/script.js"></script>
 </head>
 <body>
-  <header>
-    <div class="logo extremes">
-      Fabrizio.<span class="dev">Dev</span>
-    </div>
-    <ul class="menu">
-      <li class="dropdown">
-      <span class="material-symbols-outlined extremes"> menu 
-      </span>
-        <ul class="features-menu">
-          <li><a href="#Know-me">Conosciamoci</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact-me">Contattami</a></li>
-          <li><a href="curriculum.html">Curriculum</a></li>
-        </ul>
-      </li>
-    </ul>
-  </header>
-  
-  <section class="home">
+    <nav class="navbar bg-body-tertiary">
+      <div class="container">
+        <a href="index.html" class="navbar-brand" > Fabrizio.<span class="dev">Dev</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="#Know-me" class="nav-link active">Conosciamoci</a></li>
+            <li class="nav-item"><a href="#portfolio" class="nav-link active">Portfolio</a></li>
+            <li class="nav-item"><a href="#contact-me" class="nav-link active">Contattami</a></li>
+            <li class="nav-item"><a href="curriculum.html" class="nav-link active">Curriculum</a></li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+  <main class="home">
     <div>
     <div class="img-container">
     <img class="my-face" src="assets/img/Images.jpg" alt="Fabrizio Recchia profile picture">
@@ -68,36 +70,42 @@
   <div class="wrapper">
     <div class="button">
       <div class="icon">
-       <a href="https://www.facebook.com/Fabbry94?locale=it_IT"><i class="fab fa-facebook"></i></i></a>
+       <a href="https://www.facebook.com/Fabbry94?locale=it_IT"><i class="fab fa-facebook"></i></a>
        <a href="https://www.instagram.com/fabbry94/"><i class="fab fa-instagram"></i></a>
        <a href="https://github.com/Fabrizio994"><i class="fab fa-github"></i></a>
       </div>
     </div>
   </div>
 </div>
-</section> 
+</main> 
 <div class="wrapper-img"><img src="https://cdn.vectorstock.com/i/preview-1x/91/21/programmer-concept-for-web-banner-developer-works-vector-40009121.webp" alt="web-developer and a pc">
 </div>
-  <main id="Know-me">
+  <section class="know_me" id="Know-me">
     <h6>Ciao, Io sono Fabrizio</h6>
     <div class="wrap-biografy">
       <p>Sono un front-end developer appassionato che abbraccia la sfida dell'apprendimento continuo.<br> Con una mente aperta e un'incessante curiosità, mi impegno a crescere professionalmente e personalmente, affrontando ogni giorno con determinazione e creatività.</p>
     </div>
     <div class="wrapper-skills">
-    <div class="skills">
+      <div class="skills">
       <div class="d-h5">
         <h5>Skills</h5>
       </div>
       <div class="w-skills">
-      <div class="skill">
-        <i class="fa-brands fa-html5 fa-2xl"></i><span>Html</span></div>
-      <div class="skill"><i class="fa-brands fa-css3 fa-2xl"></i><span>Css</span></div>
-      <div class="skill"><i class="fa-brands fa-bootstrap fa-2xl"></i><span>Bootstrap</span></div>
-      <div class="skill"><i class="fa-brands fa-sass fa-2xl"></i><span>Sass</span></div>
+                <div class="skill">
+          <i class="fa-brands fa-html5 fa-2xl"></i><span>Html</span></div>
+        <div class="skill">
+          <i class="fa-brands fa-css3 fa-2xl"></i><span>Css</span>
+        </div>
+        <div class="skill">
+          <i class="fa-brands fa-bootstrap fa-2xl"></i><span>Bootstrap</span>
+        </div>
+        <div class="skill">
+          <i class="fa-brands fa-sass fa-2xl"></i><span>Sass</span>
+        </div>
+        </div>
+      </div>
     </div>
-    </div>
-    </div>
-  </main>
+  </section>
 
   <article id="portfolio" class="portfolio">
     <div class="wrapper-portfolio">
@@ -115,7 +123,6 @@
     </div>
   </div>
   </article>
-   
   <div id="contact-me" class="contact-me"> 
     <div class="wrap-footer">
     <h3>Contact me</h3>
@@ -138,8 +145,8 @@
       <div class="form-row-button">
     <button onclick="sendMail()" class="submit" id="submit" type="submit">Submit</button>
   </form>
-  </div>
-  </div>
+ </div>
+</div>
 </div>
 <footer>
   <p>Copyright &copy; 2024 Fabrizio recchia. All rights Reserve</p>

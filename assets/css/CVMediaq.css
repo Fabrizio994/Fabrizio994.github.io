@@ -1,0 +1,32 @@
+@media only screen and (min-width: 1382px) {
+  body {
+    background-color: lightblue; }
+
+  main .container_1 {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    margin: 30px 50px;
+    flex-direction: row; }
+    main .container_1 .left {
+      border: 1px solid black;
+      box-shadow: 0 35px 35px 0 rgba(0, 0, 0, 0.618);
+      width: 30%; }
+    main .container_1 .right {
+      border: 1px solid black;
+      box-shadow: 0 35px 35px rgba(0, 0, 0, 0.618); }
+      main .container_1 .right .divider {
+        display: flex;
+        justify-content: center; }
+        main .container_1 .right .divider .white {
+          background-color: black;
+          height: 1px;
+          width: 80%; }
+      main .container_1 .right .right-bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly; }
+        main .container_1 .right .right-bottom .hobby {
+          margin-top: 0; } }
+
+/*# sourceMappingURL=CVMediaq.css.map */
