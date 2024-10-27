@@ -420,13 +420,17 @@ const App: React.FC = () => {
                 </div>
 
                 {/* <!-- Form --> */}
-                <form name="contact" data-netlify="true">
+                <form name="contact" method="POST" data-netlify="true">
+                  {/* Campo nascosto per Netlify */}
+                  <input type="hidden" name="form-name" value="contact" />
+
                   <div className="mb-5">
                     <input
                       type="text"
                       className="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white"
                       name="name"
                       placeholder="Name"
+                      required
                     />
                   </div>
                   <div className="mb-5">
@@ -435,6 +439,7 @@ const App: React.FC = () => {
                       className="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white"
                       name="email"
                       placeholder="Email"
+                      required
                     />
                   </div>
                   <div className="mb-5">
@@ -442,6 +447,7 @@ const App: React.FC = () => {
                       className="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white"
                       name="message"
                       placeholder="Message"
+                      required
                     ></textarea>
                   </div>
                   <div className="mb-5 d-grid">
