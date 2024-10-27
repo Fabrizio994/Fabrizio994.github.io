@@ -2,6 +2,12 @@ import "./App.scss";
 import React, { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import foto1 from "./assets/images/1b392776-9ade-4188-b362-1508c57e5e31.jpg";
+import foto2 from "./assets/images/project1.jpg";
+import foto3 from "./assets/images/project2.jpg";
+import foto4 from "./assets/images/project3.jpg";
+import foto5 from "./assets/images/project4.jpg";
+
 import {
   faClock,
   faDiagramProject,
@@ -88,8 +94,8 @@ const App: React.FC = () => {
             </div>
             <div className="about-content d-flex gap-5 align-items-center h-100">
               <img
-                src="../src/assets/images/1b392776-9ade-4188-b362-1508c57e5e31.jpg"
-                alt=""
+                src={foto1}
+                alt="Myfoto"
                 className="about-img img-fluid rounded-circle"
               />
               <p className="lead">
@@ -270,7 +276,7 @@ const App: React.FC = () => {
                     rel="noopener noreferrer"
                   >
                     <img
-                      src="../src/assets/images/project1.png"
+                      src={foto2}
                       alt="App cambiamento climatico"
                       className="img-fluid rounded-3"
                     />
@@ -286,7 +292,7 @@ const App: React.FC = () => {
                     rel="noopener noreferrer"
                   >
                     <img
-                      src="../src/assets/images/project2.png"
+                      src={foto3}
                       alt="App meditazione"
                       className="img-fluid rounded-3"
                     />
@@ -302,7 +308,7 @@ const App: React.FC = () => {
                     rel="noopener noreferrer"
                   >
                     <img
-                      src="../src/assets/images/project3.png"
+                      src={foto4}
                       alt="Category book search"
                       className="img-fluid rounded-3"
                     />
@@ -318,7 +324,7 @@ const App: React.FC = () => {
                     rel="noopener noreferrer"
                   >
                     <img
-                      src="../src/assets/images/project4.png"
+                      src={foto5}
                       alt="A simple counter"
                       className="img-fluid rounded-3"
                     />
@@ -464,20 +470,16 @@ const App: React.FC = () => {
                 Copyright &copy; 2023 | Design By StyleShout
               </p>
               <div className="hstack gap-3">
-                <a href="#">
-                  <i className="fab fa-facebook fa-2x text-white"></i>
+                <a href="https://github.com/Fabrizio994" target="_blank">
+                  <FontAwesomeIcon icon={faGithub} size="2xl" />
                 </a>
-                <a className="text-decoration-none" href="#">
-                  <i className="fab fa-twitter fa-2x text-white"></i>
-                </a>
-                <a className="text-decoration-none" href="#">
-                  <i className="fab fa-instagram fa-2x text-white"></i>
-                </a>
-                <a className="text-decoration-none" href="#">
-                  <i className="fab fa-linkedin fa-2x text-white"></i>
-                </a>
-                <a className="text-decoration-none" href="#">
-                  <i className="fab fa-dribbble fa-2x text-white"></i>
+
+                <a
+                  className="text-decoration-none"
+                  href="https://github.com/Fabrizio994"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon icon={faLinkedin} size="2xl" />
                 </a>
               </div>
             </div>
