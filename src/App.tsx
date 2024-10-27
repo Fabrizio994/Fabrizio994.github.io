@@ -15,8 +15,6 @@ import {
   faChevronDown,
   faUser,
   faCalendar,
-  faBuilding,
-  faHouse,
   faEnvelope,
   faCheck,
 } from "@fortawesome/free-solid-svg-icons";
@@ -113,14 +111,16 @@ const App: React.FC = () => {
 
         {/* <!-- Profile & Skills --> */}
         <section className="profile my-6">
-          <div className="container">
+          <div className="container ">
             <div className="row">
-              <div className="col-md-6">
-                <h3 className="text-uppercase fw-bold">Profile</h3>
-                <p>
-                  Here is some more info about myself to help you get to know me
-                  better.
-                </p>
+              <div className="col-md-6 infoCont">
+                <div>
+                  <h3 className="text-uppercase fw-bold">Profile</h3>
+                  <p>
+                    Here is some more info about myself to help you get to know
+                    me better.
+                  </p>
+                </div>
                 <ul className="list-group list-group-flush">
                   <li className="list-group-item mb-3">
                     <h5 className="text-transform">
@@ -133,18 +133,6 @@ const App: React.FC = () => {
                       <FontAwesomeIcon icon={faCalendar} /> Birth Date:
                     </h5>
                     <p>25/09/1994</p>
-                  </li>
-                  <li className="list-group-item mb-3">
-                    <h5 className="text-transform">
-                      <FontAwesomeIcon icon={faBuilding} /> Current Position:
-                    </h5>
-                    <p>Operatore Edile</p>
-                  </li>
-                  <li className="list-group-item mb-3">
-                    <h5 className="text-transform">
-                      <FontAwesomeIcon icon={faHouse} /> Website:
-                    </h5>
-                    <p>https://fabrizio994.github.io/</p>
                   </li>
                   <li className="list-group-item mb-3">
                     <h5 className="text-transform">

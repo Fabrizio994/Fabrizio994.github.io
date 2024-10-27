@@ -81,7 +81,11 @@ $container-max-widths: (
 .about-img {
   width: 200px;
 }
-
+.infoCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .project:hover {
   transform: scale(1.05);
   transition: all 0.5s ease-in-out;
