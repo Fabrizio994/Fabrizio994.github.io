@@ -426,7 +426,12 @@ const App: React.FC = () => {
                 </div>
 
                 {/* <!-- Form --> */}
-                <form name="contact" method="POST" data-netlify="true">
+                <form
+                  id="form"
+                  name="contact"
+                  method="POST"
+                  data-netlify="true"
+                >
                   {/* Campo nascosto per Netlify */}
                   <input type="hidden" name="form-name" value="contact" />
 
