@@ -338,9 +338,10 @@ const App: React.FC = () => {
                 <a
                   href="https://styleshout.com"
                   target="_blank"
-                  className="btn btn-primary btn-lg text-uppercase mx-3 my-2"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary text-uppercase mx-3 my-2 StyleShout-btn"
                 >
-                  Visit StyleShout
+                  StyleShout
                 </a>
               </div>
             </div>
